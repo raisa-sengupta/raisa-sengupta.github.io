@@ -22,22 +22,18 @@
 	}
 	</script>
 	<script>
-		var lpMethods = 
-		{
-			lpGetAuthenticationToken: function(callback) 
-			{
-            console,log("LP asked for id_token or auth code in Code Flow");
-            console.log("Authenticate function is called");
-			const jwt = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIrOTcyLTMtNTU1NS01NTUiLCJpc3MiOiJodHRwczovL2lkcC5saXZlcGVyc29uLm5ldCIsImFjciI6ImxvYTEifQ.BsmQnFOi06MT3yJlH2FmHXSA0tSZ_EtbLq8Kiv6J_FKx0Jcgk9yFEvt3SgCspWGVK0oLZMai6cjmK7eOOi41rWHcGZuesVc_TVdL9Ulf2evKS7Hbs8wtwu90iKxrQBARlglULE2tcw-dcRHegaapEwmrm9CcNoG1yzWt_sJngL2Bo2cCVri1gidXTwLpQg-mpYaJpmvayjqa6NBrM-9E9KPS6_pJbNHMh3Gsam1eb9h0SmlYqYlFkRkJNqN-nEKOqAOSFs2Q3rXOwF0C5vK5ZEVX6xXS7GTPnxqisnaRYcsDPIXOSfh_oMLMcRdoF-T6eVX0HJzElJIatSCS7fYKMw";
-			callback(jwt);
-			}
+	function lpAuthenticate(callback)
+	{
+            	console.log("Authenticate function is called");
+		const jwt = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIrOTcyLTMtNTU1NS01NTUiLCJpc3MiOiJodHRwczovL2lkcC5saXZlcGVyc29uLm5ldCIsImFjciI6ImxvYTEifQ.BsmQnFOi06MT3yJlH2FmHXSA0tSZ_EtbLq8Kiv6J_FKx0Jcgk9yFEvt3SgCspWGVK0oLZMai6cjmK7eOOi41rWHcGZuesVc_TVdL9Ulf2evKS7Hbs8wtwu90iKxrQBARlglULE2tcw-dcRHegaapEwmrm9CcNoG1yzWt_sJngL2Bo2cCVri1gidXTwLpQg-mpYaJpmvayjqa6NBrM-9E9KPS6_pJbNHMh3Gsam1eb9h0SmlYqYlFkRkJNqN-nEKOqAOSFs2Q3rXOwF0C5vK5ZEVX6xXS7GTPnxqisnaRYcsDPIXOSfh_oMLMcRdoF-T6eVX0HJzElJIatSCS7fYKMw";
+		callback(jwt);
         }
 	</script>
 	
   </head>
     <body>
        <p> Github Test Page </p>
-	   <script>
+	  <script>
 	   lpTag.sdes.push( 
 		{
         "type": "cart",  //MANDATORY
