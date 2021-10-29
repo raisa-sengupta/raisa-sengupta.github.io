@@ -9,7 +9,7 @@
 	<script>
 	//lpTag.identities = [];
 	lpTag.identities.push(identityFn);
-	function identityFn()
+	function identityFn(callback)
 	{
 		console.log("Identify function is called");
 		callback(
@@ -25,7 +25,7 @@
 	function lp_brand_authenticate(callback)
 	{
 		console.log("Authenticate function is called");
-		const jwt = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDdlatRjRjogo3WojgGHFHYLugdUWAY9iR3fy4arWNA1KoS8kVw33cJibXr8bvwUAUparCwlvdbH6dvEOfou0/gCFQsHUfQrSDv+MuSUMAe8jzKE4qW+jK+xQU9a03GUnKHkkle+Q0pX/g6jXZ7r1/xAK5Do2kQ+X5xK9cipRgEKwIDAQAB";
+		const jwt = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIrOTcyLTMtNTU1NS01NTUiLCJpc3MiOiJodHRwczovL2lkcC5saXZlcGVyc29uLm5ldCIsImFjciI6ImxvYTEifQ.BsmQnFOi06MT3yJlH2FmHXSA0tSZ_EtbLq8Kiv6J_FKx0Jcgk9yFEvt3SgCspWGVK0oLZMai6cjmK7eOOi41rWHcGZuesVc_TVdL9Ulf2evKS7Hbs8wtwu90iKxrQBARlglULE2tcw-dcRHegaapEwmrm9CcNoG1yzWt_sJngL2Bo2cCVri1gidXTwLpQg-mpYaJpmvayjqa6NBrM-9E9KPS6_pJbNHMh3Gsam1eb9h0SmlYqYlFkRkJNqN-nEKOqAOSFs2Q3rXOwF0C5vK5ZEVX6xXS7GTPnxqisnaRYcsDPIXOSfh_oMLMcRdoF-T6eVX0HJzElJIatSCS7fYKMw";
 		callback(jwt);
 	}
 	</script>
